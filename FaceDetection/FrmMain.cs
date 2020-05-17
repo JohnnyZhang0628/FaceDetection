@@ -1,14 +1,7 @@
 ﻿using OpenCvSharp;
 using OpenCvSharp.Dnn;
 using OpenCvSharp.Extensions;
-using OpenCvSharp.XFeatures2D;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace FaceDetection
@@ -24,6 +17,7 @@ namespace FaceDetection
 
         private void OnHaarFaceDetection(object sender, EventArgs e)
         {
+            Text = "Haar人脸识别";
             openCamera = false;
             var haarCascade = new CascadeClassifier("model/haarcascade_frontalface_alt.xml");
             Run(src => HaarAndLbp(src,haarCascade));
@@ -31,6 +25,7 @@ namespace FaceDetection
 
         private void OnLbpFaceDetection(object sender, EventArgs e)
         {
+            Text = "Lbp人脸识别";
             openCamera = false;
             var lbpCascade = new CascadeClassifier("model/lbpcascade_frontalface.xml");
            
@@ -39,6 +34,7 @@ namespace FaceDetection
 
         private void OnCNNFaceDetection(object sender, EventArgs e)
         {
+            Text = "CNN人脸识别";
             openCamera = false;
             Run(src => CNN(src));
         }

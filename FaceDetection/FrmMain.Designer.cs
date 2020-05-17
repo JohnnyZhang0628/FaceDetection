@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHaar = new System.Windows.Forms.Button();
             this.picCamer = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCNN = new System.Windows.Forms.Button();
+            this.btnLbp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCamer)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnHaar
             // 
-            this.button1.Location = new System.Drawing.Point(36, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Haar人脸识别";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.OnHaarFaceDetection);
+            this.btnHaar.Location = new System.Drawing.Point(36, 67);
+            this.btnHaar.Name = "btnHaar";
+            this.btnHaar.Size = new System.Drawing.Size(97, 23);
+            this.btnHaar.TabIndex = 1;
+            this.btnHaar.Text = "Haar人脸识别";
+            this.btnHaar.UseVisualStyleBackColor = true;
+            this.btnHaar.Click += new System.EventHandler(this.OnHaarFaceDetection);
             // 
             // picCamer
             // 
@@ -66,35 +66,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "视频区域";
             // 
-            // button2
+            // btnCNN
             // 
-            this.button2.Location = new System.Drawing.Point(36, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "CNN人脸识别";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.OnCNNFaceDetection);
+            this.btnCNN.Location = new System.Drawing.Point(36, 21);
+            this.btnCNN.Name = "btnCNN";
+            this.btnCNN.Size = new System.Drawing.Size(97, 23);
+            this.btnCNN.TabIndex = 0;
+            this.btnCNN.Text = "CNN人脸识别";
+            this.btnCNN.UseVisualStyleBackColor = true;
+            this.btnCNN.Click += new System.EventHandler(this.OnCNNFaceDetection);
             // 
-            // button3
+            // btnLbp
             // 
-            this.button3.Location = new System.Drawing.Point(36, 71);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Lbp人脸识别";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.OnLbpFaceDetection);
+            this.btnLbp.Location = new System.Drawing.Point(36, 108);
+            this.btnLbp.Name = "btnLbp";
+            this.btnLbp.Size = new System.Drawing.Size(97, 23);
+            this.btnLbp.TabIndex = 2;
+            this.btnLbp.Text = "Lbp人脸识别";
+            this.btnLbp.UseVisualStyleBackColor = true;
+            this.btnLbp.Click += new System.EventHandler(this.OnLbpFaceDetection);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnLbp);
+            this.Controls.Add(this.btnCNN);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnHaar);
             this.Name = "FrmMain";
             this.Text = "人脸识别";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
@@ -107,11 +107,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHaar;
         private System.Windows.Forms.PictureBox picCamer;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCNN;
+        private System.Windows.Forms.Button btnLbp;
     }
 }
 
